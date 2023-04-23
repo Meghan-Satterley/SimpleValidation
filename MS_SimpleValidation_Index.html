@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="MS_SimpleValidation_Style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+        <form id="form">		<!-- holds all components of validation box -->
+            <div>			<!-- Creates Username input with Error and pass messages -->
+                <label for="username">Username:</label>
+                <input id="username" name="username" type="text" class="username">
+                <span id="userError" class="userError">Username should be >=6 and <=10</span>
+		    <span id="userPass" class="userPass">✔</span>
+            </div>
+
+            <div>			<!-- Creates Email input with Error and pass messages -->
+                <label for="email">E-mail:</label>
+                <input id="email" name="email" type="text" class="email">
+                <span id="emailError" class="emailError">Not a valid E-mail address</span>
+		    <span id="emailPass" class="emailPass">✔</span>
+            </div>
+
+            <div> 		<!-- Creates Position input with Error and pass messages -->
+                <label for="position" class="position"> Position:</label>
+                <select id="position" name="position" class="select">
+                    <option value="empty" disabled selected>Not selected</option>
+                    <option value="engi">Engineer</option>
+                    <option value="doc">Doctor</option>
+                    <option value="mech">Mechanic</option>
+                </select>
+		    <span id="positionError" class="positionError">You must select a position</span>
+                <span id="positionPass" class="positionPass">✔</span>
+            </div>
+
+            <div> 		<!-- Creates Hours input with Error and pass messages -->
+                <section class="type">
+                    <label for="time">Type:</label>
+                    <input type="radio" name="time" id="full" class="full">
+                    <label for="time" class="ft">Full-time</label><br>
+                    <input type="radio" name="time" id="part" class="part">
+                    <label for="time" class="pt">Part-time</label>
+                    <span id="timeError" class="timeError">You must select a type</span>
+                    <span id="timePass" class="timePass">✔</span>
+                </section>
+            </div>
+
+            <input type="submit" id="submit" value="Submit">
+        </form>
+        <script src="MS_SimpleValidation_Script.js"></script>
+</body>
+
+</html>

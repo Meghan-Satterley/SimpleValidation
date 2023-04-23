@@ -1,0 +1,130 @@
+/* Adjust full border and display position */
+form {
+    position: fixed;
+    top: 30%;
+    left: 45%;
+    padding: 10px;
+    border: 2px solid grey;
+    width: 270px;
+}
+
+/* Adjust placement of input boxes */
+form input {
+    margin-left: 10px; 
+    margin-bottom: 7px;
+    width: 120px;
+    border: 1px solid gray;
+}
+
+/* Adjust style and placement of the Submit button */
+form input[type = "submit"] {
+    cursor: pointer;
+    font-weight: 600;
+    text-align: center;
+    border-radius: 3px;
+    width: 60px;
+    margin-left: 110px;
+}
+
+/* Adjust input boxes for username and email */
+label {
+    display: inline-block; 
+    width: 80px;
+    text-align: right;
+}
+
+/* Sets size and position of Username input box */
+.username {
+    padding: 2px;
+    width: 130px;
+}
+
+/* Sets size and position of email input box */
+.email {
+    padding: 2px;
+    width: 130px;
+        
+}
+
+/* Sets size and position of the position box */
+.position {
+    padding: 2px;
+    width: 65px;
+    margin-left: 21px;
+    margin-bottom: 5px;
+}
+
+/* Sets size and position of position selector */
+.select {
+    padding: 1px;
+    width: 100px;
+}
+
+/* Sets size and position of check for full time */
+.full {
+    width: 25px;
+    margin-left: 3px;
+}
+
+/* Sets size and position for full time */
+.ft{
+    width: 60px;
+}
+
+/* Sets size and position of check for part time */
+.part {
+    width: 25px;
+    margin-left: 87px;
+}
+
+/* Sets size and position for part time */
+.pt {
+    width: 60px;
+}
+
+/* Sets weight and color for error message */
+.userError {
+    color: red;
+    font-weight: 400;
+}
+
+/* Sets weight and color for error message */
+.emailError {
+    color: red;
+    font-weight: 400;
+}
+
+/* Sets weight and color for error message */
+.positionError {
+    color: red;
+    font-weight: 400;
+    margin-left: 3px;
+}
+
+/* Sets weight and color for error message */
+.timeError {
+    color: red;
+    font-weight: 400;
+    margin-left: 3px;
+}
+
+/* Sets color for pass message */
+.userPass {
+    color: green;
+}
+
+/* Sets color for pass message */
+.emailPass {
+    color: green;
+}
+
+/* Sets color for pass message */
+.positionPass {
+    color: green;
+}
+
+/* Sets color for pass message */
+.timePass {
+    color: green;
+    margin-left: 3px;
+}
