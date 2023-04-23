@@ -52,6 +52,7 @@ label {
     width: 65px;
     margin-left: 21px;
     margin-bottom: 5px;
+    text-align: left;
 }
 
 /* Sets size and position of position selector */
